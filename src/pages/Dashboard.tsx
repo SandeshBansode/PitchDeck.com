@@ -18,6 +18,7 @@ export function Dashboard() {
     <div>
       <div className="mb-12">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">Welcome to PitchDeck</h1>
+        <p className="text-lg text-gray-600 mb-8">startup ecosystem with AI—predict success, automate finances, and make data-driven decisions like never before.</p>
         <p className="text-lg text-gray-600 mb-8">Connect with innovative startups, investors, and resources to accelerate your growth.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
@@ -37,6 +38,7 @@ export function Dashboard() {
       <ContentGrid items={investors} title="Top Investors" />
       <ContentGrid items={incubators} title="Leading Incubators" />
       <ContentGrid items={courses} title="Popular Courses" />
+      <ContentGrid items={courses} title="Finance ai" />
     </div>
   );
 }
